@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple, clean, and interactive TO-DO LIST application created by Justin Cius to help you manage your daily tasks efficiently."
+    />
+    <meta
+      name="keywords"
+      content="todo list, task manager, daily organizer, justin cius, web app, html, css, javascript"
+    />
+    <meta name="author" content="Justin Cius" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/check.png" />
+    <script src="index.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/f80dadc656.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>TO-DO LIST</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="second-container" />
+      <header>
+        <span class="header-content">TO DO LIST</span>
+        <span id="date"></span>
+      </header>
+      <main>
+        <form>
+          <input
+            id="user-input"
+            type="text"
+            name="task"
+            placeholder="Enter a task here"
+          />
+          <button class="submit" type="submit">Submit</button>
+        </form>
+        <div id="task-list"></div>
+        <button class="clear" id="clear-list"><span>Clear</span></button>
+      </main>
+      <footer id="copyright">
+        <small>&copy; 2025 Justin Cius. All rights reserved</small>
+      </footer>
+    </div>
+  </body>
+</html>

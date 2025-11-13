@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: transparent;
+  min-width: 100vw;
+  height: 100vh;
+  background-image: url(images/backImage.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+div.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(144, 144, 144, 0.13);
+  backdrop-filter: blur(2px) brightness(80%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.second-container {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 2px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header-content {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 34px;
+  text-align: center;
+  flex-grow: 2;
+}
+
+main {
+  height: 550px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main,
+form {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+form input {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-bottom: 3px solid black;
+  border-radius: 2px;
+  outline: none;
+  padding-left: 10px;
+}
+p.task {
+  font-size: 18px;
+}
+button {
+  width: 40px;
+  max-width: 100%;
+  height: 40px;
+  max-height: 100%;
+
+  cursor: pointer;
+  font-size: 18px;
+  background-color: rgb(163, 255, 163);
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 80px;
+}
+
+div#task-list {
+  width: 100%;
+  height: 300px;
+  max-height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 1;
+  overflow: auto;
+  scrollbar-color: rgb(163, 255, 163) #00000000;
+}
+
+span.btn-container {
+  position: absolute;
+  right: 30px;
+}
+
+span button {
+  margin: 0px 15px;
+}
+
+button.submit,
+.clear {
+  width: 100px;
+  height: 35px;
+  color: rgb(255, 255, 255);
+
+  border-radius: 10px;
+}
+
+button.clear div#task-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 10px 10px 10px;
+  font-size: 18px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(26, 121, 5);
+  font-weight: bold;
+}
