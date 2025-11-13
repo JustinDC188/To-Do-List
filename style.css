@@ -25,11 +25,12 @@ div.container {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hide;
 }
 
 div.second-container {
   width: 60%;
-  height: 80%;
+  height: contain;
   display: flex;
   justify-content: flex-start;
   align-items: center;
